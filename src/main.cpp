@@ -25,6 +25,7 @@ void drip_water() {
 // what happens when button is pressed
 void brew() {
   noInterrupts(); // disable interrupts so that extra button pushes don't screw with the brew
+  
   heat_water();
 
   drip_water();
