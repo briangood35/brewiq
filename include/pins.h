@@ -3,9 +3,9 @@
 
 #include <Arduino.h>
 
-#define HEAT_RELAY 4
-#define VALVE_RELAY 5
-#define START_BUTTON 6
+#define HEAT_RELAY 45
+#define VALVE_RELAY 35
+#define START_BUTTON 25
 
 void init_pins();
 

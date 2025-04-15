@@ -2,6 +2,10 @@
 
 extern void brew();
 
+void test_func() {
+    Serial.println("test_func");
+}
+
 void init_pins() {
 
     pinMode(HEAT_RELAY, OUTPUT);
@@ -11,6 +15,8 @@ void init_pins() {
     digitalWrite(VALVE_RELAY, 0); // ??
 
     pinMode(START_BUTTON, INPUT_PULLUP);
-    attachInterrupt(digitalPinToInterrupt(START_BUTTON), brew, RISING);
+    // attachInterrupt(digitalPinToInterrupt(START_BUTTON), test_func, FALLING);
 
 }
+
+
